@@ -116,9 +116,9 @@ This script demonstrates three common use cases:
 3. Accessing data for a lat/lon range
 
 The data is stored in zarr format on S3 at:
-    s3://oedi-data-lake/inspire/agrivoltaics_irradiance/v1.1/
+    s3://oedi-data-lake/inspire/agrivoltaics_irradiance/v1.0/
 
-Each setup has its own zarr file named: preliminary_{setup:02d}.zarr
+Each setup has its own zarr file named: configuration_{setup:02d}.zarr
 
 System IDs can be found in the metadata file for Available System Information on the [OEDI site](https://data.openei.org/submissions/4568)(Ref [1])</br> or from information on the [Agrivoltaics Shading Tool interactive website](https://openei.org/wiki/InSPIRE)(Ref [2]) 
 

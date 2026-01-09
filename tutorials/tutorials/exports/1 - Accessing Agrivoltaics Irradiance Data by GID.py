@@ -63,7 +63,7 @@ setup_nums, example_gids
 # Preview ZARR Paths
 
 zarr_paths = [
-    f"s3://{S3_BUCKET_PATH}/preliminary_{setup_num:02d}.zarr"
+    f"s3://{S3_BUCKET_PATH}/configuration_{setup_num:02d}.zarr"
     for setup_num in setup_nums
 ]
 zarr_paths
