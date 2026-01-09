@@ -93,14 +93,13 @@ Here, gid indexes locations, time indexes hourly timestamps, and distance indexe
 | underpanel | Average ground irradiance on the ground directly underneath PV panels | (gid, time) | W/m^2 |
 | wind_direction | Wind direction | (gid, time) | ° |
 | wind_speed | Wind speed | (gid, time) | m/s |
+
 *All data variables are 64-bit floats (`float64`).*
 
 *A note on dimensionality*:  
 Variables with only `gid` dimension have one entry at each location.  
 Variables with `gid` and `time` dimensions have one entry at each hour for each location.  
 Variables with `gid`, `time`, and `distance` dimensions have one entry at 10 inter-row sample points for each hour at each location.
-
-
 
 ## Access Python Usage
 This is both a set of functions as well as an exectuable python packge. It requires the passing of parameters at the start.
