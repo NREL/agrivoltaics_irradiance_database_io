@@ -42,9 +42,3 @@ steps:
 1. Use the file explorer in Jupyter lab to browse to `tutorials`
    and start the first Tutorial.
 
-
-Documentation
-=============
-
-You can find more detail on functions and tools to use the agrivoltaics shading data within:
-[InSPIRE Main Repository](https://nrel-inspire.readthedocs.io/en/stable/)
