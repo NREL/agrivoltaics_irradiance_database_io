@@ -2,8 +2,6 @@
 
 # U.S. Agrivoltaic Irradiance Database
 
-Detailed documentation is found in [inspire_openei_access Pages](https://nrel.github.io/inspire_openei_access/)(Ref [3])
-
 ## Overview
 This is a foundational data set for research and deployment of agrivoltaics, which is the co-location of agriculture and solar power plants on the same land. This irradiance and shading dataset can be utilized to determine the suitability of agrivoltaics configurations for a given region and crop-type. The data is hourly, 4x4 km resolution across the contiguous United States and Hawaii. It is calculated from National Solar Radiation Database (NSRDB) sites, using the System Advisor Model (SAM) to simulate the shading patterns for 11 common agrivoltaics configurations. Sunlight availability data for a typical meteorological year (TMY) is reported at 10 locations on the ground between adjacent rows of solar panels, as well as averaged across areas of interest such as the average irradiance in the edge-to-edge open area or across 3-6 planting beds. Other available metrics include the input meteorological data from the NSRDB (e.g. global horizontal irradiance, wind speed, etc.) and estimates for comparing energy and agricultural characteristic across the 11 configurations, including power output per acre or per kW installed capacity and farmable land area per acre.
 
@@ -128,5 +126,4 @@ The Agrivoltaics Shading data will be downloaded as the series of timeseeries fi
 ## References
 </code>
 [1]:https://data.openei.org/submissions/4568
-[2]:https://openei.org/wiki/PVDAQ
-[3]:https://nrel.github.io/pvdaq_access/
+[2]:https://openei.org/wiki/InSPIRE
