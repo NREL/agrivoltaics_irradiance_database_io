@@ -1,0 +1,67 @@
+[build-system]
+requires = [
+  "setuptools>=68",
+  "setuptools_scm[toml]>=8",
+  "wheel"
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agrivoltaics_io"
+dynamic = ["version"]
+readme = "README.md"
+description = "Functions to interface with Agrivoltaics Irradiance datasets"
+requires-python = ">=3.8"
+license = { text = "BSD-3-Clause" }
+authors = [
+  { name = "Silvana Ovaitt", email = "silvana.ovaitt@nrel.gov" }
+]
+keywords = [
+  "agrivoltaics",
+  "irradiance",
+  "ground irradiance",
+  "photovoltaic",
+  "data",
+  "datasets",
+  "weatherdata",
+  "NSRDB",
+  "geospatial"
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Science/Research",
+  "License :: OSI Approved :: BSD License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10"
+]
+dependencies = [
+  "xarray",
+  "zarr",
+  "s3fs",
+  "fsspec",
+  "pandas",
+  "numpy",
+  "matplotlib"
+]
+
+[project.urls]
+Homepage = "https://github.com/NREL/agrivoltaics_irradiance_database_io"
+
+[project.optional-dependencies]
+doc = [
+  "jupyter-book"
+]
+all = [
+  "ipython",
+  "jupyter",
+  "pytest",
+  "pytest-cov"
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+
+[tool.setuptools_scm]
+fallback_version = "0.0.1"
