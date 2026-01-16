@@ -82,4 +82,4 @@ tutorials/_build/
 .ropeproject
 
 # training
-training/tutorials/TEMP/
+#tutorials/TEMP/

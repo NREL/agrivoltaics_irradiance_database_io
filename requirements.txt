@@ -1,10 +1,8 @@
-boto3
-botocore
-jmespath
-numpy
+jupyter-book
+xarray
+zarr
+s3fs
+fsspec
 pandas
-python-dateutil
-pytz
-s3transfer==0.6.0
-six
-urllib3
+numpy
+matplotlib

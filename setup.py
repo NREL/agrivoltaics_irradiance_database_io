@@ -13,7 +13,7 @@ with open(path.join(here, 'README.md'), encoding='utf-8') as f:
     long_description = f.read()
 
 setup(
-    name='inspire_oedi_access', 
+    name='agrivoltaics_io', 
     # Versions should comply with PEP440.  For a discussion on single-sourcing
     # the version across setup.py and the project code, see
     # https://packaging.python.org/en/latest/single_source_version.html
@@ -25,7 +25,7 @@ setup(
     long_description_content_type="text/markdown",
 
     # The project's main homepage.
-    url='https://github.com/NREL/inspire_oedi_access',
+    url='https://github.com/NREL/agrivoltaics_irradiance_database_io',
 
     # Author details
     author='Silvana Ovaitt',
@@ -62,27 +62,25 @@ setup(
     # You can just specify the packages manually here if your project is
     # simple. Or you can use find_packages().
     #packages=find_packages(exclude=['contrib', 'docs', 'tests']) + ['data'],
-    packages = ['inspire_oedi_access'],
+    packages=find_packages(where="src"),
+    package_dir={"": "src"},
     # Alternatively, if you want to distribute just a my_module.py, uncomment
     # this:
-    #py_modules=["inspire_oedi_access"],
+    #py_modules=["agrivoltaics_irradiance_database_io"],
 
     # List run-time dependencies here.  These will be installed by pip when
     # your project is installed. For an analysis of "install_requires" vs pip's
     # requirements files see:
     # https://packaging.python.org/en/latest/requirements.html
     install_requires=[
-        'boto3',
-        'botocore',
-        'jmespath',
-        'numpy',
-        'pandas',
-        'python-dateutil',
-        'pytz',
-        's3transfer',
-        'six',
-        'urllib3',
-        'requests',
+        "jupyter-book",
+        "xarray",
+        "zarr",
+        "s3fs",
+        "fsspec",
+        "pandas",
+        "numpy",
+        "matplotlib",
         ],
 
     # List additional groups of dependencies here (e.g. development
@@ -93,8 +91,7 @@ setup(
 
     extras_require={
         'doc': [
-            'ipython',
-            'tqdm',
+            "jupyter-book"
         ],
         'all': [
             'ipython',
@@ -107,7 +104,7 @@ setup(
     # installed, specify them here.  If using Python 2.6 or less, then these
     # have to be included in MANIFEST.in as well.
     #package_data={
-    #    'inspire_oedi_access': [
+    #    'agrivoltaics_io': [
     #        ],
     #},
     #include_package_data=True,
