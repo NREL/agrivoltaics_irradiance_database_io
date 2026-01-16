@@ -1,8 +1,8 @@
 # Book settings
 # Learn more at https://jupyterbook.org/customize/config.html
 
-title: pvdaq_access Training
-author: Silvana Ovaitt, Robert White, Kirsten Perry, Martin Springer, 
+title: agrivoltaic_irradiance_access Training
+author: Silvana Ovaitt, Kate Doubleday, Tobin Ford
 logo: PVDAQ_logo.png
 
 # Force re-execution of notebooks on each build.
@@ -21,7 +21,7 @@ bibtex_bibfiles:
 
 # Information about where the book exists on the web
 repository:
-  url: https://github.com/NREL/pvdaq_access
+  url: https://github.com/NREL/agrivoltaics_irradiance_database_io
   path_to_book: tutorials  # Optional path to your book, relative to the repository root
   branch: main
 
