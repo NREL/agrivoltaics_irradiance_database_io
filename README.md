@@ -126,5 +126,4 @@ The Agrivoltaics Shading data will be downloaded as the series of time series fi
 ## References
 </code>
 [1]:https://data.openei.org/submissions/4568
-[2]:https://openei.org/wiki/PVDAQ
-[3]:https://nrel.github.io/pvdaq_access/
+[2]:https://openei.org/wiki/InSPIRE
