@@ -8,8 +8,7 @@ Clicking on the rocket-icon on the top allows you to launch the journals on
 As per the instructions on each journal, you should uncomment the first line 
 that reads `pip install ...`  to install the environment if you follow this mode.
 
-You can also clone the repository and run them locally, following the 
-instructions on the [Inspire Openei Access Github page](https://github.com/NREL/inspire_openei_access)
+You can also clone the repository and run them locally, from the [U.S. Agrivoltaic Irradiance Database IO page](https://github.com/NREL/agrivoltaics_irradiance_database_io)
 
 ```{tableofcontents}
 ```

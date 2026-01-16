@@ -2,8 +2,6 @@
 
 # U.S. Agrivoltaic Irradiance Database
 
-Detailed documentation is found in [inspire_openei_access Pages](https://nrel.github.io/inspire_openei_access/)(Ref [3])
-
 ## Overview
 This is a foundational data set for research and deployment of agrivoltaics, which is the co-location of agriculture and solar power plants on the same land. This irradiance and shading dataset can be utilized to determine the suitability of agrivoltaics configurations for a given region and crop-type. The data is hourly, 4x4 km resolution across the contiguous United States and Hawaii. It is calculated from National Solar Radiation Database (NSRDB) sites, using the System Advisor Model (SAM) to simulate the shading patterns for 11 common agrivoltaics configurations. Sunlight availability data for a typical meteorological year (TMY) is reported at 10 locations on the ground between adjacent rows of solar panels, as well as averaged across areas of interest such as the average irradiance in the edge-to-edge open area or across 3-6 planting beds. Other available metrics include the input meteorological data from the NSRDB (e.g. global horizontal irradiance, wind speed, etc.) and estimates for comparing energy and agricultural characteristic across the 11 configurations, including power output per acre or per kW installed capacity and farmable land area per acre.
 
@@ -107,10 +105,10 @@ This is both a set of functions as well as an exectuable python packge. It requi
 * path : Followed by a string that targets the local computer location/path you wish the data to be stored into.
 * parquet : A flag that changes the data type from default CSV to Parquet file for download.
 
-For using the functions, see the tutorial examples folder. There, the demo script for accessing agrivoltaics irradiance data from S3 zarr files can be run directly to see printed output
+For using the functions, see the tutorial examples folder. There, the demo scripts for accessing agrivoltaics irradiance data from S3 zarr files can be run directly to see printed output
 of all examples, or individual functions can be imported and used in other scripts
 
-This script demonstrates three common use cases:
+The tutorials demonstrates three common use cases:
 1. Loading data for selected setups by GID
 2. Using the gid-lat-lon.csv lookup table to find the nearest GID for a given lat/lon
 3. Accessing data for a lat/lon range
@@ -123,7 +121,7 @@ Each setup has its own zarr file named: configuration_{setup:02d}.zarr
 System IDs can be found in the metadata file for Available System Information on the [OEDI site](https://data.openei.org/submissions/4568)(Ref [1])</br> or from information on the [Agrivoltaics Shading Tool interactive website](https://openei.org/wiki/InSPIRE)(Ref [2]) 
 
 ### Processing
-The Agrivoltaics Shading data will be downloaded as the series of timeseeries files. At this point you can plot ground irradiances for the full year, or use data processing to average or sum by day, month, season, or other metric of interest. 
+The Agrivoltaics Shading data will be downloaded as the series of time series files. At this point you can plot ground irradiances for the full year, or use data processing to average or sum by day, month, season, or other metric of interest. 
 
 ## References
 </code>
