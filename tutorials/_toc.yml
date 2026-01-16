@@ -5,5 +5,5 @@ format: jb-book
 root: intro
 chapters:
 - file: tutorials/1 - Accessing Agrivoltaics Irradiance Data by GID
-- file: tutorials/2 - Accessing Agrivoltaics Irradiance Data by Neartes Lat-Lon
+- file: tutorials/2 - Accessing Agrivoltaics Irradiance Data by Nearest Lat-Lon
 - file: tutorials/3 - Accessing Agrivoltaics Irradiance Data for a Lat-Lon bounding box

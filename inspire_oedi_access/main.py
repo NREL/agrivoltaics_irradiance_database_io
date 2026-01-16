@@ -78,7 +78,7 @@ def concatenateData(state_id, path):
 
 
 # S3 bucket configuration
-S3_BUCKET_PATH = "oedi-data-lake/inspire/agrivoltaics_irradiance/v1.1"
+S3_BUCKET_PATH = "oedi-data-lake/inspire/agrivoltaics_irradiance/v1.0"
 LOOKUP_TABLE_PATH = f"s3://{S3_BUCKET_PATH}/gid-lat-lon.csv"
 
 
@@ -115,7 +115,7 @@ def open_zarr_dataset(setup_num, s3_bucket_path=S3_BUCKET_PATH):
     xr.Dataset
         Opened xarray dataset
     """
-    zarr_filename = f"preliminary_{setup_num:02d}.zarr"
+    zarr_filename = f"configuration_{setup_num:02d}.zarr"
     zarr_path = f"s3://{s3_bucket_path}/{zarr_filename}"
     
     # Create fsspec mapper for S3 (anonymous access)

@@ -27,8 +27,8 @@ steps:
    this tutorial. To install them using conda run:
 
    ```
-   conda create -n pvdaq jupyter -c conda-forge --file requirements.txt
-   conda activate pvdaq
+   conda create -n agripvIO jupyter -c conda-forge --file requirements.txt
+   conda activate agripvIO
    ```
 
    or you can install it with `pip install inspire_openei_access` as explained in the installation instructions into the environment.
@@ -42,9 +42,3 @@ steps:
 1. Use the file explorer in Jupyter lab to browse to `tutorials`
    and start the first Tutorial.
 
-
-Documentation
-=============
-
-You can find more detail on functions and tools to use the agrivoltaics shading data within:
-[InSPIRE Main Repository](https://nrel-inspire.readthedocs.io/en/stable/)
